@@ -42,6 +42,13 @@ def clean_coordinate_value(value):
 
 
 def clean_coordinates(function):
+    """Clean the two sets of coordinates provided to the function.
+
+    When the decorated function is called it will be provided with two
+    sets of coordinates. Other arguments will be untouched, but the 
+    coordinates will be cleaned so that each is a tuple of two floats.
+    """
+
     @functools.wraps(function)
     def inner(a, b, *args, **kwargs):
         a = (clean_coordinate_value(a[0]), clean_coordinate_value(a[1]))
