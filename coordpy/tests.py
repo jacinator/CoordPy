@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """CoordPy test cases.
 
-This module contains the tests for the CoordPy package. Since the
-package only contains two functions, there is a testcase for each of
-them.
+This module contains the tests for the CoordPy package. This includes
+functions from the coordinates module, the decorators module, and the
+utils module. These three modules contain the base operations for
+CoordPy, the coordinate cleaners to wrap the functions, and the integer
+modifications for the package respectively.
 """
 
 import math
