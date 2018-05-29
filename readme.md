@@ -68,3 +68,20 @@ All of this is thrown out however, if the distance between the two
 points, provided by ``get_distance``, is less than the value of
 ``marks``. If that is the case, you will reach your destination
 regardless and the destination coordinates are returned.
+
+## Get all steps
+
+CoordPy allows you to retrieve a list of all the steps between two
+points, if you want the entire list for something. This is accomplished
+in ``coordpy.utils.get_all_steps``. By giving this function two sets of
+coordinates it will calculate all the steps between the the two points.
+
+## Integer specific
+
+Not everyone will want their pathing to be in floats. This is totally
+fine and CoordPy has that functionality built into it. The file
+``coordpy.utils`` has an alternative function ``get_int_step`` that
+simply rounds the output of ``get_step`` to the nearest whole integer.
+
+``get_all_steps`` also allows ``get_int_step`` to be passed into it in
+order to get the entire list of steps rounded to the nearest integers.
