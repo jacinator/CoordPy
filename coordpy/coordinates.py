@@ -13,7 +13,7 @@ from . import decorators
 def get_distance(a, b):
     """Return the distance between the two coordinates.
 
-    This function uses the Pythagorean Theorum to determine the length
+    This function uses the Pythagorean Theorem to determine the length
     of the distance between the two points.
 
     Args:
