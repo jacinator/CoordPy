@@ -35,7 +35,7 @@ will draw a straight line between them and measure it.
 5.0
 ```
 
-This might look familiar, because it is the Pythagorean Theorum. A
+This might look familiar, because it is the Pythagorean Theorem. A
 right angle is easily measurable. We can find out the lenght of the
 other two sides of the triangle by extracting the difference between
 the ``X`` coordinates and ``Y`` coordinates. These can be used to find
