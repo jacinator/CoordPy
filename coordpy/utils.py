@@ -9,7 +9,7 @@ of the utilities found in ``coordpy.coordinates``.
 from . import coordinates, decorators
 
 @decorators.clean_coordinates
-def get_all_steps(a, b, method=coordinates.get_step, **kwargs):
+def get_all_steps(a, b, method=coordinates.get_step, marks=1):
     """Get all the steps between two locations.
 
     This function will loop, generating another set of coordinates,
@@ -34,7 +34,8 @@ def get_all_steps(a, b, method=coordinates.get_step, **kwargs):
 
     steps = [a]
     while steps[-1] != b:
-        steps.append(method(steps[-1], b, **kwargs))
+        _marks = marks * len(steps)
+        steps.append(method(a, b, _marks))
     return steps
 
 @decorators.clean_coordinates
