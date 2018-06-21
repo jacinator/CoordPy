@@ -82,15 +82,15 @@ class GetDistanceTestCase(unittest.TestCase):
     to keep working.
 
     Most of these tests take a set of coordinates and match the output
-    of ``get_distance`` to the result of the Pythagorean Theorum.
+    of ``get_distance`` to the result of the Pythagorean Theorem.
     """
 
     def test_using_pythagorean_theorum(self):
         """Assert that the Pythagorean Theorum is still true.
 
         This function is basically a working out of the Pythagorean
-        Theorum. Since that is the case, we need to assert that the
-        Pythagorean Theorum still matches an easily recognizable
+        Theorem. Since that is the case, we need to assert that the
+        Pythagorean Theorem still matches an easily recognizable
         output.
         """
 

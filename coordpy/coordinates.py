@@ -13,7 +13,7 @@ from . import decorators
 def get_distance(a, b):
     """Return the distance between the two coordinates.
 
-    This function uses the Pythagorean Theorum to determine the length
+    This function uses the Pythagorean Theorem to determine the length
     of the distance between the two points.
 
     Args:
@@ -37,13 +37,13 @@ def get_step(a, b, marks=1):
     """Return a coordinate set between ``a`` and ``b``.
 
     This function returns a coordinate point between the two provided
-    coordinates. It does this be determining the angle of the path
+    coordinates. It does this by determining the angle of the path
     between the two points and getting the sine and cosine from that
     angle. The returned coordinate will be ``marks`` away from ``a``.
 
     It is worth noting that if the distance between the two points,
-    calculated by ``get_distance`` is less than the value of ``marks``,
-    a copy of ``b`` is returned.
+    calculated by ``get_distance``, is less than the value of ``marks``,
+    then a copy of ``b`` is returned.
 
     Args:
         a (list): A tuple is also acceptable. This list will have two
